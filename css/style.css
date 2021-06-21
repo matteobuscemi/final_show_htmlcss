@@ -1,1 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+* {
+    font-family: 'Manrope', sans-serif;
+}
+
+body {
+    background-color: transparent;
+
+    
+}
+
+
 #meer {display: none;}
+
+h1 {
+    justify-content: center;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 1000;
+}
+
+a {
+    text-decoration: none;
+}
+
+a h3.sluiten {
+    position: relative;
+    display: inline;
+    color: black;
+    width: auto;
+    float: right;
+    right: 570px;
+    top: -25px;
+
+}
+
+.pop-up {
+    position: relative;
+    background-color: #E4DFEB;
+    border-radius: 29px;
+    width: 800px;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 50px;
+}
+.pop-up img.coverphoto {
+    border-radius:29px 29px 0px 0px;
+    width: 100%;
+}
+
+.pop-up img.logobackground  {
+    position: absolute;
+    z-index: 0;
+    right: 0;
+    bottom: 80px;
+    height: 250px;
+    transform:rotate(150deg) ;
+
+}
+
+.bottom-menu {
+    text-align: center;
+    background-color: #B89BE0;
+    border-radius: 0px 0px 29px 29px;
+    height: 60px;
+    
+}
+
+
+
+.pop-up h2 {
+    margin-left: 10%;
+    font-weight: bold;
+    font-size: 35px;
+    color: #766889;
+    float: left;
+
+}
+
+.pop-up h2, h4, p {
+    margin-left: 10%;
+}
+
+.pop-up p {
+    margin-right: 10%;
+}
+
+.pop-up h3 {
+    float: right;
+    margin-top: 45px;
+    margin-right: 30%;
+    font-size: 20px;
+
+}
+
+.pop-up h4 {
+    margin-top: 110px;
+}
+.bottom-menu a {
+    
+    display: inline-block;
+    text-decoration: none;
+    padding-left: 25px;
+    margin: 1px;
+    color: black;
+    
+
+}
+
+.bottom-menu a:first-child {
+    padding-left: 0px;
+}
+
+.bottom-menu h5 {
+    font-size: 18px;
+    padding: 0px;
+    margin: 1px;
+    padding: 15px 0;
+    
+}
+
+.bottom-menu a.active {
+    color: white;
+    
+    
+}
+.bottom-menu a:hover {
+    color: white;
+}
+
+#myBtn {
+    text-decoration: none;
+    border: none;
+    background-color: transparent;
+    color: #766889;
+    margin-bottom: 10px;
+    margin-left: 9.5%;
+    margin-bottom: 5%;
+}
+#myBtn:hover {
+    color: #B89BE0;
+    border-bottom: 1px solid #B89BE0;
+    
+}
