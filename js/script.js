@@ -1,5 +1,19 @@
 const api_url = "https://finalshowcase.herokuapp.com/final-work/get-all";
 
+var buttons = document.querySelectorAll("a");
+var cluster = "web";
+buttons.forEach(button => {
+    button.addEventListener("click", function(){
+        cluster = button.classList[0];
+        console.log(cluster);
+        getapi(api_url);
+    })
+});
+
+
+
+
+
 async function getapi(url) {
     const response = await fetch(url);
 
@@ -24,10 +38,7 @@ function show(data) {
                     Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                     <button onclick="myFunction()" id="myBtn">Lees meer</button>
     `
-    var cluster = document.querySelector("a.active").classList[0];
     var project = data.find(p => p.cluster == cluster);
-    console.log(cluster);
-    console.log(cluster.classList);
     var tekst2 = project.description.split(".");
     var tekst1 = tekst2.shift();
     console.log(project);
