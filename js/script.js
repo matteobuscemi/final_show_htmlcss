@@ -6,6 +6,7 @@ async function getapi(url) {
     var data = await response.json();
     
     show(data);
+    
 }
 
 getapi(api_url);
@@ -23,52 +24,21 @@ function show(data) {
                     Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                     <button onclick="myFunction()" id="myBtn">Lees meer</button>
     `
-
-for (let project of data) {
+    var cluster = document.querySelector("a.active").classList[0];
+    var project = data.find(p => p.cluster == cluster);
+    console.log(cluster);
+    console.log(cluster.classList);
     var tekst2 = project.description.split(".");
     var tekst1 = tekst2.shift();
-    if(project.cluster == "web"){
+    console.log(project);
+
+    
         document.querySelector(".projecten").innerHTML = `
         <img class="coverphoto" src="${project.images}">
         <h2>${project.name}</h2>
         <h3>${project.username}</h3>
         <h4>Beschrijving</h4>
-        <p>${tekst1}<span id="dots">...</span><span id="meer">${tekst2}</span></p>
-        <button onclick="myFunction()" id="myBtn">Lees meer</button>
+        <p>${project.description}</p>
         `;
-    }
-
-    
-
-    // document.querySelector(".projecten").innerHTML = `
-    // <img class="coverphoto" src="${project.images}">
-    // <h2>${project.name}</h2>
-    // <h3>${project.username}</h3>
-    // <h4>Beschrijving</h4>
-    // <p>${tekst1}<span id="dots">...</span><span id="meer">${tekst2}</span></p>
-    // <button onclick="myFunction()" id="myBtn">Lees meer</button>
-    // `;
 }
-
-}
-
-
-
-
-function myFunction() {
-    var dots = document.getElementById("dots");
-    var moreText = document.getElementById("more");
-    var btnText = document.getElementById("myBtn");
-  
-    if (dots.style.display === "none") {
-      dots.style.display = "inline";
-      btnText.innerHTML = "Lees meer";
-      meer.style.display = "none";
-    } else {
-      dots.style.display = "none";
-      btnText.innerHTML = "Lees minder";
-      meer.style.display = "inline";
-    }
-  }
-
   

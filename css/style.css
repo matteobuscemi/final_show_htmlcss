@@ -63,6 +63,10 @@ a h3.sluiten {
     object-fit: cover;
 }
 
+.pop-up p {
+    padding-bottom: 30px;
+}
+
 .pop-up img.logobackground  {
     position: absolute;
     z-index: 0;
