@@ -35,11 +35,20 @@ a h3.sluiten {
 
 }
 
+.hoeveelheid {
+    float: left;
+    position: relative;
+    display: inline;
+    width: auto;
+    left: 475px;
+    top: -25px;
+}
 .pop-up {
     position: relative;
     background-color: #E4DFEB;
     border-radius: 29px;
     width: 1000px;
+    height: auto;
     
     align-items: center;
     justify-content: center;
@@ -157,7 +166,7 @@ a h3.sluiten {
     transform: rotate(180deg);
     position: relative;
     top: 400px;
-    left: 375px;
+    left: 325px;
     color:rebeccapurple;
 }
 
@@ -165,5 +174,5 @@ a h3.sluiten {
     float: right;
     position: relative;
     top: -300px;
-    right: 375px;
+    right: 350px;
 }
