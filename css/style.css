@@ -348,10 +348,15 @@ button:hover img {
 
 .chooseTime {
     height: 120px;
+    width: 1000px;
     border: 1px solid #ddd;
     display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
     overflow-y:hidden;
-    top: 665px;
+    overflow-x: scroll;
+    bottom: 0;
     position: absolute;
     border-radius: 0px 0px 29px 29px;
 
@@ -359,12 +364,50 @@ button:hover img {
 }
 .chooseTime .item {
     background-color:#E4DFEB ;
+    height: 120px;
     border-top: 1px solid #B89BE0;
-    width: 350px;
+    min-width: 33%;
     padding-top: 1%;
     padding-left: 1%;
 }
 .chooseTime h6, .chooseTime h5 {
     padding: 0px;
     margin: 0px;
+    padding-left: 30px;
+}
+
+.chooseTime h5 {
+    color: #766889;
+    padding-top: 15px;
+}
+
+.chooseTime h6 {
+    padding-top: 5px;
+    font-size: 12px;
+}
+
+.chooseTime .active {
+    background-color: #B89BE0;
+    
+
+}
+.chooseTime .active h5 {
+    color: black;
+}
+
+.chooseTime .item:hover {
+    background-color: #B89BE0;
+    cursor: pointer;
+}
+
+.chooseTime .item:hover h5 {
+    color: black;
+}
+
+.chooseTime .event1, .chooseTime .event2,.chooseTime .event3,.chooseTime .event4,.chooseTime .event5,.chooseTime .event6,.chooseTime .event7,.chooseTime .event8,.chooseTime .event9,.chooseTime .event10,.chooseTime .event11,.chooseTime .event12 {
+    display: block;
+}
+
+.event1 {
+    display: block;
 }
