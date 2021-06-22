@@ -163,6 +163,7 @@ a h3.sluiten {
 
 .left, .right {
     width: 30px;
+    cursor: pointer;
 }
 
 .left {
