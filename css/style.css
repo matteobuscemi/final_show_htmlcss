@@ -25,30 +25,30 @@ a {
 }
 
 a h3.sluiten {
-    position: relative;
+    position: absolute;
     display: inline;
     color: black;
     width: auto;
     float: right;
     right: 475px;
-    top: -25px;
+    top: 80px;
 
 }
 
 .hoeveelheid {
     float: left;
-    position: relative;
+    position: absolute;
     display: inline;
     width: auto;
     left: 475px;
-    top: -25px;
+    top: 80px;
 }
 .pop-up {
     position: relative;
     background-color: #E4DFEB;
     border-radius: 29px;
     width: 1000px;
-    height: auto;
+    height: 750px;
     
     align-items: center;
     justify-content: center;
@@ -64,7 +64,7 @@ a h3.sluiten {
 }
 
 .pop-up p {
-    padding-bottom: 30px;
+    padding-bottom: 50px;
 }
 
 .pop-up img.logobackground  {
@@ -82,6 +82,9 @@ a h3.sluiten {
     background-color: #B89BE0;
     border-radius: 0px 0px 29px 29px;
     height: 60px;
+    width: 100%;
+    top: 690px;
+    position: absolute;
     
 }
 
@@ -93,7 +96,14 @@ a h3.sluiten {
     font-size: 35px;
     color: #766889;
     float: left;
+    word-wrap: break-word;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
 
+.projecten h3 {
+    color: black;
 }
 
 .pop-up h2, h4, p {
@@ -169,15 +179,15 @@ a h3.sluiten {
 .left {
     float: left;
     transform: rotate(180deg);
-    position: relative;
-    top: 400px;
-    left: 325px;
+    position: absolute;
+    top: 500px;
+    left: 350px;
     color:rebeccapurple;
 }
 
 .right {
     float: right;
-    position: relative;
-    top: -300px;
+    position: absolute;
+    top: 500px;
     right: 350px;
 }

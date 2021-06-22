@@ -34,7 +34,9 @@ function show(data) {
     var started = false;
     var projecten = data.filter(p => p.cluster == cluster);
     Array.prototype.next = function() {
+        
         return this[++this.current];
+        
     };
     Array.prototype.prev = function() {
         return this[--this.current];
@@ -45,25 +47,34 @@ function show(data) {
     var nextProject = document.querySelector(".right");
     var previousProject = document.querySelector(".left");
     nextProject.addEventListener("click", function(){
+
+        if (projecten.length-1 == projecten.current){
+            projecten.current = -1;
+        }
         project = projecten.next();
+        
+         
         document.querySelector(".hoeveelheid").innerHTML = `${projecten.current+1}/${projecten.length}`;
         console.log("text");
         document.querySelector(".projecten").innerHTML = `
         <img class="coverphoto" src="${project.images}">
-        <h2>${project.name}</h2>
-        <h3>${project.username}</h3>
+        <a href="${project.url}"><h2>${project.name}</h2></a>
+        <a href="mailto:${project.email}"><h3>${project.username}</h3></a>
         <h4>Beschrijving</h4>
         <p>${project.description}</p>
         `;
     });
     previousProject.addEventListener("click", function(){
+        if (projecten.current == 0){
+            projecten.current = projecten.length;
+        }
         project = projecten.prev();
         document.querySelector(".hoeveelheid").innerHTML = `${projecten.current+1}/${projecten.length}`;
         console.log("text");
         document.querySelector(".projecten").innerHTML = `
         <img class="coverphoto" src="${project.images}">
-        <h2>${project.name}</h2>
-        <h3>${project.username}</h3>
+        <a href="${project.url}"><h2>${project.name}</h2></a>
+        <a href="mailto:${project.email}"><h3>${project.username}</h3></a>
         <h4>Beschrijving</h4>
         <p>${project.description}</p>
         `;
@@ -74,8 +85,8 @@ function show(data) {
     if(!started) {
         document.querySelector(".projecten").innerHTML = `
         <img class="coverphoto" src="${project.images}">
-        <h2>${project.name}</h2>
-        <h3>${project.username}</h3>
+        <a href="${project.url}"><h2>${project.name}</h2></a>
+        <a href="mailto:${project.email}"><h3>${project.username}</h3></a>
         <h4>Beschrijving</h4>
         <p>${project.description}</p>
         `;
