@@ -341,3 +341,33 @@ button:hover {
 button:hover img {
     background-image: url(/img/mobile.svg);
 }
+
+.event1, .event2, .event3,.event4,.event5,.event6,.event7,.event8,.event9,.event10,.event11, .event12 {
+    display:none;
+}
+
+.chooseTime {
+    max-height: 120px;
+    border: 1px solid #ddd;
+    display: flex;
+    overflow-x: auto;
+    overflow-y:hidden;
+    top: 665px;
+    position: absolute;
+    border-radius: 0px 0px 29px 29px;
+
+
+}
+
+.chooseTime::-webkit-scrollbar {
+    margin: 0;
+}
+
+.chooseTime .item {
+    width: 200px;
+    height: 110px;
+    line-height: 110px;
+    text-align: center;
+    background-color:#E4DFEB ;
+    border-top: 1px solid black;
+}
