@@ -1,4 +1,4 @@
-var menubuttons = document.querySelectorAll(".menu a");
+var menubuttons = document.querySelectorAll("button");
 var menucluster = "web";
 menubuttons.forEach(button => {
     button.addEventListener("click", function(){

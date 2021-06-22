@@ -48,18 +48,18 @@ a h3.sluiten {
     background-color: #E4DFEB;
     border-radius: 29px;
     width: 1000px;
-    height: 750px;
-    
+    height: 775px;
+    z-index: 0;
     align-items: center;
     justify-content: center;
     margin: auto;
     margin-top: 50px;
-    box-shadow: 2px 2px 2px #ccc;
+    box-shadow: 2px 2px 2px rgb(102, 102, 102);
 }
 .pop-up img.coverphoto {
     border-radius:29px 29px 0px 0px;
     width: 100%;
-    height: 300px;
+    height: 325px;
     object-fit: cover;
 }
 
@@ -69,11 +69,27 @@ a h3.sluiten {
 
 .pop-up img.logobackground  {
     position: absolute;
-    z-index: 0;
+    z-index: -1;
     right: 0;
     bottom: 80px;
     height: 250px;
     transform:rotate(150deg) ;
+
+}
+.pop-up img.logobackground2  {
+    position: absolute;
+    z-index: -1;
+    right: 150px;
+    height: 250px;
+    transform:rotate(0deg) ;
+
+}
+.pop-up img.logobackground3  {
+    position: absolute;
+    z-index: -1;
+    left: 50px;
+    height: 250px;
+    transform:rotate(180deg) ;
 
 }
 
@@ -83,7 +99,7 @@ a h3.sluiten {
     border-radius: 0px 0px 29px 29px;
     height: 60px;
     width: 100%;
-    top: 690px;
+    top: 715px;
     position: absolute;
     
 }
@@ -171,6 +187,8 @@ a h3.sluiten {
     
 }
 
+
+
 .left, .right {
     width: 30px;
     cursor: pointer;
@@ -190,4 +208,136 @@ a h3.sluiten {
     position: absolute;
     top: 500px;
     right: 350px;
+}
+
+.menu {
+    justify-content: center;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+button {
+    display: block;
+    width: 90%;
+    height: 120px;
+    border: 0px;
+    background-color: white;
+    border-radius: 15px;
+    margin-top: 2%;
+    margin-left: 5%;
+    margin-right: 5%;
+    box-shadow: 2px 2px 2px rgb(102, 102, 102);
+}
+
+button div {
+    display: inline-block;
+    float: left;
+}
+button .image-web {
+background: url("../img/web-idle.svg") no-repeat;
+width: 50px;
+height: 50px;
+padding: 10px;
+margin: 10px;
+margin-left: 50px;
+}
+
+button .image-ar {
+    background: url("../img/ar-idle.svg") no-repeat;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    margin: 10px;
+    margin-left: 50px;
+    }
+
+button .image-mobile {
+        background: url("../img/mobile-idle.svg") no-repeat;
+        width: 50px;
+        height: 50px;
+        padding: 10px;
+        margin: 10px;
+        margin-left: 50px;
+        }
+
+        button .image-motion {
+            background: url("../img/motion-idle.svg") no-repeat;
+            width: 50px;
+            height: 50px;
+            padding: 10px;
+            margin: 10px;
+            margin-left: 50px;
+            }
+
+            button .image-dm {
+                background: url("../img/digital-making-idle.svg") no-repeat;
+                width: 50px;
+                height: 50px;
+                padding: 10px;
+                margin: 10px;
+                margin-left: 50px;
+                }
+
+button:hover .image-web {
+    background: url("../img/web.svg") no-repeat;
+}
+
+button:hover .image-ar {
+    background: url("../img/ar.svg") no-repeat;
+}
+
+button:hover .image-mobile {
+    background: url("../img/mobile.svg") no-repeat;
+}
+
+button:hover .image-motion {
+    background: url("../img/motion.svg") no-repeat;
+}
+
+button:hover .image-dm {
+    background: url("../img/digital-making.svg") no-repeat;
+}
+
+.btntekst p, .btntekst h2 {
+    
+    margin: 0px;
+    padding: 0px;
+    display: block;
+    text-align: left;
+}
+
+.btntekst {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 50px;
+}
+.btntekst h2 {
+    margin-top: 0px;
+}
+
+.btntekst p {
+    margin-top: 30px;
+}
+
+.btntekst h2 {
+    font-size: 20px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+button:hover h2 {
+    color:black;
+}
+button:hover p {
+    color: white;
+}
+
+button:hover {
+    background-color: #B89BE0;
+}
+
+button:hover img {
+    background-image: url(/img/mobile.svg);
 }
