@@ -1,5 +1,5 @@
 "use strict";
-var faqButtons = document.querySelectorAll(".item");
+var faqButtons = document.querySelectorAll(".items");
 console.log(faqButtons);
 faqButtons.forEach(button => {
    
