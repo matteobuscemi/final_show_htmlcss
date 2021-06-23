@@ -220,41 +220,27 @@ p {
 
 }
 
-.titelBtn a {
-    color: black;
-
-}
-
-.titelBtn a:hover {
-    color: #766889;
-}
-
 .active {
     color: #766889;
-
-
 }
 
-.results{
-    display: block;
+.results {
+    display: none;
 }
-
-
 
 .hideInfo h5 {
     align-items: flex-start;
     font-size: 20px;
     margin-left: 40px;
     color: #766889;
-
 }
 
 .hideInfo {
     padding-top: 15px;
     background-color: white;
     border-radius: 0px 29px 29px 0px;
-    width: 500px;
-    height: 737px;
+    width: 50%;
+    height: 750px;
     margin-left: 175px;
     box-shadow: 2px 2px 2px #ccc;
     font-size: 17px;
@@ -275,4 +261,24 @@ p {
     bottom: 5px;
     height: 250px;
     transform: rotate(-180deg);
+}
+
+@media screen and (max-width: 600px) {
+   
+
+    .pop-up {
+        width: 70%;
+        height: 70%;
+    }
+
+    .hideInfo {
+        height: 850px;
+        width: 100%;
+    }
+
+    .logobackgroundFaq {
+        height: 150px;
+
+    }
+
 }
