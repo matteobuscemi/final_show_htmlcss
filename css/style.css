@@ -8,13 +8,12 @@
 }
 
 body {
-    background-color: transparent;
+    background-color: black;
 
     
 }
 
-
-#meer {display: none;}
+/* FONTS/LETTERTYPES/H1....6 */
 
 h1 {
     padding-top: 20px;
@@ -27,6 +26,11 @@ h1 {
     text-shadow: 2px 2px 2px rgb(110, 109, 109);
 }
 
+
+h1.active {
+    color: white;
+    opacity: 100%;
+}
 a {
     text-decoration: none;
 }
@@ -51,44 +55,8 @@ a h3.sluiten {
 
 }
 
-.hoeveelheid {
-    color: white;
-    width: auto;
-}
 
-.upper-nav {
-    display: flex;
-    justify-content:space-between;
-    align-items: center;
-    width: 980px;
-    padding: 0px 5px;
-
-    
-}
-
-.wrapper {
-    display: flex;
-    justify-content: center;
-    width: calc(100vw - 20px);
-}
-
-.upper-nav h3 {
-    justify-content: center;
-    text-align: center;
-    display: inline-block;
-    margin-bottom: 10px;
-
-}
-
-.upper-nav .hoeveelheid {
-    padding-left: 20px;
-}
-
-.upper-nav h3.sluiten {
-    margin: 0;
-    padding: 0;
-}
-
+/* POP UP */
 .pop-up {
     position: relative;
     background-color: #E4DFEB;
@@ -161,20 +129,6 @@ a h3.sluiten {
     height: 250px;
 
 }
-
-.bottom-menu {
-    text-align: center;
-    background-color: #B89BE0;
-    border-radius: 0px 0px 29px 29px;
-    height: 60px;
-    width: 100%;
-    top: 715px;
-    position: absolute;
-    
-}
-
-
-
 .pop-up h2 {
     padding-top: 30px;
     font-weight: bold;
@@ -186,11 +140,6 @@ a h3.sluiten {
     white-space: nowrap;
     overflow: hidden;
 }
-
-.projecten h3 {
-    color: black;
-}
-
 .pop-up h2, h4, p {
     margin-left: 10%;
 }
@@ -206,9 +155,73 @@ a h3.sluiten {
     font-size: 20px;
 
 }
-
 .pop-up h4 {
     margin-top: 110px;
+}
+
+/* SHOWROOM */
+.hoeveelheid {
+    color: white;
+    width: auto;
+}
+.upper-nav {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    width: 980px;
+    padding: 0px 5px;
+
+    
+}
+.wrapper {
+    display: flex;
+    justify-content: center;
+    width: calc(100vw - 20px);
+}
+.upper-nav h3 {
+    justify-content: center;
+    text-align: center;
+    display: inline-block;
+    margin-bottom: 10px;
+
+}
+.upper-nav .hoeveelheid {
+    padding-left: 20px;
+}
+.upper-nav h3.sluiten {
+    margin: 0;
+    padding: 0;
+}
+.bottom-menu {
+    text-align: center;
+    background-color: #B89BE0;
+    border-radius: 0px 0px 29px 29px;
+    height: 60px;
+    width: 100%;
+    top: 715px;
+    position: absolute;
+    
+}
+.left, .right {
+    justify-content: center;
+    text-align: center;
+    display: inline;
+    width: 30px;
+    cursor: pointer;
+}
+.left {
+    float: left;
+    transform: rotate(180deg);
+    position: absolute;
+    top: 500px;
+    left: 350px;;
+}
+.right {
+    float: right;
+    position: absolute;
+    top: 500px;
+    right: 350px;
+
 }
 .bottom-menu a {
     
@@ -220,11 +233,9 @@ a h3.sluiten {
     
 
 }
-
 .bottom-menu a:first-child {
     padding-left: 0px;
 }
-
 .bottom-menu h5 {
     font-size: 18px;
     padding: 0px;
@@ -232,7 +243,6 @@ a h3.sluiten {
     padding: 15px 0;
     
 }
-
 .bottom-menu a.active {
     color: white;
     
@@ -241,47 +251,15 @@ a h3.sluiten {
 .bottom-menu a:hover {
     color: white;
 }
-
-#myBtn {
-    text-decoration: none;
-    border: none;
-    background-color: transparent;
-    color: #766889;
-    margin-bottom: 10px;
-    margin-left: 9.5%;
-    margin-bottom: 5%;
-}
-#myBtn:hover {
-    color: #B89BE0;
-    
+.projecten h3 {
+    color: black;
 }
 
 
-.left, .right {
-    justify-content: center;
-    text-align: center;
-    display: inline;
-    width: 30px;
-    cursor: pointer;
+/* WEBGL/STANDAARDMENU */
+h1.live {
+    padding-left: 55px;
 }
-
-.left {
-    float: left;
-    transform: rotate(180deg);
-    position: absolute;
-    top: 500px;
-    left: 350px;;
-}
-
-.right {
-    float: right;
-    position: absolute;
-    top: 500px;
-    right: 350px;
-
-}
-
-
 
 .webglmenu img {
     position: absolute;
@@ -290,24 +268,19 @@ a h3.sluiten {
     padding-right: 10px;
     padding-top: 10px;
 }
-
 .menuopties {
     display: flex;
     justify-content: center;
 }
-
 .menuopties h2 {
     transform: translate(-50%, -50%);
 }
-
 .menupu {
     height: 500px;
 }
-
 .menuopties h2:hover {
     color: white;
 }
-
 ul {
     list-style-type: none;
     margin: 0;
@@ -317,13 +290,32 @@ ul {
     padding: 0;
 
   }
-
 .menu {
     justify-content: center;
     padding-top: 3%;
     padding-bottom: 3%;
 }
+.standaardmenu {
+    justify-content: center;
+    text-align: center;
 
+}
+.standaardmenu h1 {
+    display: inline-block;
+    text-decoration: none;
+    margin: 1px;
+    padding-right: 155px;
+    color: white;
+    opacity: 75%;
+    text-shadow: 2px 2px 2px rgb(110, 109, 109);
+}
+
+.standaardmenu h1:hover {
+    color: white;
+    opacity: 100%;
+}
+
+/* BUTTON */
 button {
     display: block;
     width: 90%;
@@ -336,7 +328,6 @@ button {
     margin-right: 5%;
     box-shadow: 2px 2px 2px rgb(102, 102, 102);
 }
-
 button div {
     display: inline-block;
     float: left;
@@ -349,7 +340,6 @@ padding: 10px;
 margin: 10px;
 margin-left: 50px;
 }
-
 button .image-ar {
     background: url("../img/ar-idle.svg") no-repeat;
     width: 50px;
@@ -358,7 +348,6 @@ button .image-ar {
     margin: 10px;
     margin-left: 50px;
     }
-
 button .image-mobile {
         background: url("../img/mobile-idle.svg") no-repeat;
         width: 50px;
@@ -367,7 +356,6 @@ button .image-mobile {
         margin: 10px;
         margin-left: 50px;
         }
-
         button .image-motion {
             background: url("../img/motion-idle.svg") no-repeat;
             width: 50px;
@@ -376,7 +364,6 @@ button .image-mobile {
             margin: 10px;
             margin-left: 50px;
             }
-
             button .image-dm {
                 background: url("../img/digital-making-idle.svg") no-repeat;
                 width: 50px;
@@ -385,27 +372,21 @@ button .image-mobile {
                 margin: 10px;
                 margin-left: 50px;
                 }
-
 button:hover .image-web {
     background: url("../img/web.svg") no-repeat;
 }
-
 button:hover .image-ar {
     background: url("../img/ar.svg") no-repeat;
 }
-
 button:hover .image-mobile {
     background: url("../img/mobile.svg") no-repeat;
 }
-
 button:hover .image-motion {
     background: url("../img/motion.svg") no-repeat;
 }
-
 button:hover .image-dm {
     background: url("../img/digital-making.svg") no-repeat;
 }
-
 .btntekst p, .btntekst h2 {
     
     margin: 0px;
@@ -413,7 +394,6 @@ button:hover .image-dm {
     display: block;
     text-align: left;
 }
-
 .btntekst {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -430,30 +410,27 @@ button:hover .image-dm {
 .btntekst h2 {
     font-size: 20px;
 }
-
 button:hover {
     cursor: pointer;
 }
-
 button:hover h2 {
     color:black;
 }
 button:hover p {
     color: white;
 }
-
 button:hover {
     background-color: #B89BE0;
 }
-
 button:hover img {
     background-image: url(/img/mobile.svg);
 }
-
 .event1, .event2, .event3,.event4,.event5,.event6,.event7,.event8,.event9,.event10,.event11, .event12 {
     display:none;
 }
 
+
+/*TIMETABLE*/
 .chooseTime {
     height: 120px;
     width: 998px;
@@ -467,8 +444,6 @@ button:hover img {
     bottom: 0;
     position: absolute;
     border-radius: 0px 0px 29px 29px;
-
-
 }
 .chooseTime .item {
     background-color:#E4DFEB ;
@@ -526,47 +501,40 @@ button:hover img {
     background: (68,68,68);
     border-radius: 10px;
 }
-
-
 .chooseTime .item:hover h5 {
     color: black;
 }
-
 .chooseTime .event1, .chooseTime .event2,.chooseTime .event3,.chooseTime .event4,.chooseTime .event5,.chooseTime .event6,.chooseTime .event7,.chooseTime .event8,.chooseTime .event9,.chooseTime .event10,.chooseTime .event11,.chooseTime .event12 {
     display: block;
 }
-
 .event1 {
     display: block;
 }
-
 .timetableevent h2 {
     display: block;
     margin-top: 80px;
     margin-left: 10%;
 }
-
 .timetableevent p {
     padding-top: 200px;
 }
-
 .timetableevent img {
     width: 250px;
     height: 500px;
     object-fit: cover;
 }
-
 .timetablepu {
     height: 500px;
 }
-
-
-
 h2.uur {
     position: absolute;
     right: 0;
     padding-right: 10%;
 }
+
+
+
+/*FAQ*/
 .titelBtn h5 {
     margin-top: 60px;
     margin-left: 25px;
@@ -576,24 +544,20 @@ h2.uur {
     cursor: pointer;
 
 }
-
 .titelBtn {
     margin-left: 20px;
     margin-top: 10px;
 
 }
-
 .active {
     color: white;
 }
-
 .results {
     display: none;
 }
 .results:first-child{
     display: block;
 }
-
 .hideInfo h5 {
     align-items: flex-start;
     font-size: 20px;
@@ -601,7 +565,6 @@ h2.uur {
     color: #766889;
     padding-top: 55px;
 }
-
 .hideInfo {
     padding-top: 15px;
     background-color: white;
@@ -613,18 +576,15 @@ h2.uur {
     font-size: 17px;
     line-height: 30px;
 }
-
 .items:hover {
     color: white;
 }
-
 .faq {
     display: flex;
     align-items: flex-start;
     height: 600px;
 
 }
-
 .logobackgroundFaq {
     position: absolute;
     z-index: 0;
@@ -635,34 +595,194 @@ h2.uur {
 }
 
 
-.standaardmenu {
+/*LIVESTREAM*/
+.livestreampu {
+    height: 725px;
+}
+.livestreamiframe
+ {
+     display: flex;
+     padding-top: 100px;
     justify-content: center;
-    text-align: center;
+    align-items: center;
+}
 
+
+/* MEDIA QUERIES/RESPONSIVE */
+@media screen and (max-width: 1024px) {
+.pop-up {
+    width: 80%;
+    height: 700px;
+}
+
+.bottom-menu {
+    top: 640px;
+    position: absolute;
+}
+
+.projecten p {
+    font-size: 13px;
+}
+.projecten h4 {
+    font-size: 14px;
+    padding-bottom: 10px;
+    margin-top: 75px;
+
+}
+.projecten h2 {
+    font-size: 25px;
+}
+
+.projecten h3 {
+    font-size: 18px;
+    margin-top: 38px;
+   
+}
+.left {
+    left: 30px;
+    top: 433px;
+}
+
+.right {
+    right: 30px;
+    top: 433px;
+}
+.upper-nav {
+    width: 80%;
 }
 
 .standaardmenu h1 {
-    display: inline-block;
-    text-decoration: none;
-    margin: 1px;
-    padding-right: 155px;
-    color: white;
-    opacity: 75%;
-    text-shadow: 2px 2px 2px rgb(110, 109, 109);
-}
-
-.standaardmenu h1:hover {
-    color: white;
-    opacity: 100%;
+    padding-right: 30px;
+    font-size: 35px;
 }
 
 h1.live {
-    padding-left: 55px;
+    padding-left: 30px;
 }
 
-h1.active {
-    color: white;
-    opacity: 100%;
+/*TIMETABLE*/
+button {
+    display: block;
+    width: 90%;
+    height: 110px;
+    border: 0px;
+    background-color: white;
+    border-radius: 15px;
+    margin-top: 2%;
+    margin-left: 5%;
+    margin-right: 5%;
+    box-shadow: 2px 2px 2px rgb(102, 102, 102);
 }
+button .image-web, button .image-ar, button .image-mobile,button .image-motion, button .image-dm{
+    width: 70px;
+    height: 70px;
+    }
+    a h3.sluiten {
+        padding-left:690px ;
+        margin-bottom: 5px;
+    }
 
+    .chooseTime {
+        width: 820px;
+    }
 
+    /* FAQ */
+    .hideInfo {
+        height: 700px;
+        width: 85%;
+
+    }
+    .hideInfo h5 {
+        margin-left: 40px;
+    }
+    a h3.sluiten.faqsluiten {
+        padding-left: 700px;
+    
+    }
+
+    /* MENU */
+    .menuopties {
+        padding-top: 50px;
+    }
+    .menupu {
+        height: 500px;
+    }
+}
+@media screen and (max-width: 1440px) {
+.standaardmenu h1{
+    padding-right: 45px;
+}
+h1.live {
+    padding-left: 40px;
+}
+.pop-up {
+    width: 80%;
+    height: 700px;
+}
+button {
+    display: block;
+    width: 90%;
+    height: 100px;
+    border: 0px;
+    background-color: white;
+    border-radius: 15px;
+    margin-top: 2%;
+    margin-left: 5%;
+    margin-right: 5%;
+    box-shadow: 2px 2px 2px rgb(102, 102, 102);
+}
+button .image-web, button .image-ar, button .image-mobile,button .image-motion, button .image-dm{
+    width: 80px;
+    height: 80px;
+    }
+
+    /*SHOWROOM*/
+    .upper-nav {
+        width: 80%;
+    }
+    .bottom-menu {
+        top:640px;
+    }
+    .projecten h4 {
+        margin-top: 80px;
+        margin-bottom: 10px;
+    
+    }
+    .left {
+        left: 35px;
+    }
+    .right {
+        right: 35px;
+    }
+
+    /*TIMETABLE*/
+    .chooseTime {
+        width: 1151px;
+    }
+    a h3.sluiten {
+        padding-left:1000px ;
+    }
+
+    /*MENU*/
+    .menuopties {
+        padding-top: 50px;
+    }
+    .menupu {
+        height: 500px;
+    }
+
+    /*FAQ*/
+    .hideInfo {
+        height: 700px;
+        width: 55%;
+
+    }
+    .hideInfo h5 {
+        margin-left: 60px;
+    }
+    a h3.sluiten.faqsluiten {
+        padding-left: 1000px;
+    
+    }
+
+}
