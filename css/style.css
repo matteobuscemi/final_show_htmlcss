@@ -2,6 +2,9 @@
 
 * {
     font-family: 'Manrope', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -14,35 +17,78 @@ body {
 #meer {display: none;}
 
 h1 {
+    padding-top: 20px;
+    padding-bottom: 20px;
     justify-content: center;
     text-align: center;
     font-size: 40px;
     font-weight: 1000;
+    color: white;
+    text-shadow: 2px 2px 2px rgb(110, 109, 109);
 }
 
 a {
     text-decoration: none;
 }
 
-a h3.sluiten {
-    position: absolute;
-    display: inline;
-    color: black;
+
+a h3.sluiten.faqsluiten {
+    justify-content: center;
+    text-align: center;
+    padding-left: 870px;
     width: auto;
-    float: right;
-    right: 475px;
-    top: 80px;
+    margin-bottom: 10px;
+
+}
+
+a h3.sluiten {
+    justify-content: center;
+    text-align: center;
+    padding-left: 870px;
+    color: white;
+    width: auto;
+    margin-bottom: 10px;
 
 }
 
 .hoeveelheid {
-    float: left;
-    position: absolute;
-    display: inline;
+    color: white;
     width: auto;
-    left: 475px;
-    top: 80px;
 }
+
+.upper-nav {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    width: 980px;
+    padding: 0px 5px;
+
+    
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    width: calc(100vw - 20px);
+}
+
+.upper-nav h3 {
+    justify-content: center;
+    text-align: center;
+    display: inline-block;
+    margin-bottom: 10px;
+
+}
+
+.upper-nav .hoeveelheid {
+    padding-left: 20px;
+}
+
+.upper-nav h3.sluiten {
+    margin: 0;
+    padding: 0;
+}
+
 .pop-up {
     position: relative;
     background-color: #E4DFEB;
@@ -53,7 +99,6 @@ a h3.sluiten {
     align-items: center;
     justify-content: center;
     margin: auto;
-    margin-top: 50px;
     box-shadow: 2px 2px 2px rgb(102, 102, 102);
 }
 .pop-up img.coverphoto {
@@ -131,7 +176,7 @@ a h3.sluiten {
 
 
 .pop-up h2 {
-    margin-left: 10%;
+    padding-top: 30px;
     font-weight: bold;
     font-size: 35px;
     color: #766889;
@@ -211,17 +256,11 @@ a h3.sluiten {
     
 }
 
-.left.ttl {
-    float: left;
-    top: 350px;
-}
-
-.right.ttr {
-    float: right;
-    top: 350px;
-}
 
 .left, .right {
+    justify-content: center;
+    text-align: center;
+    display: inline;
     width: 30px;
     cursor: pointer;
 }
@@ -231,8 +270,7 @@ a h3.sluiten {
     transform: rotate(180deg);
     position: absolute;
     top: 500px;
-    left: 350px;
-    color:rebeccapurple;
+    left: 350px;;
 }
 
 .right {
@@ -240,7 +278,45 @@ a h3.sluiten {
     position: absolute;
     top: 500px;
     right: 350px;
+
 }
+
+
+
+.webglmenu img {
+    position: absolute;
+    width: 40px;
+    right: 0;
+    padding-right: 10px;
+    padding-top: 10px;
+}
+
+.menuopties {
+    display: flex;
+    justify-content: center;
+}
+
+.menuopties h2 {
+    transform: translate(-50%, -50%);
+}
+
+.menupu {
+    height: 500px;
+}
+
+.menuopties h2:hover {
+    color: white;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    margin-left: 55%;
+    margin-right: 40%;
+    margin-top: 6%;
+    padding: 0;
+
+  }
 
 .menu {
     justify-content: center;
@@ -508,64 +584,85 @@ h2.uur {
 }
 
 .active {
-    color: #766889;
+    color: white;
 }
 
 .results {
     display: none;
 }
+.results:first-child{
+    display: block;
+}
 
 .hideInfo h5 {
     align-items: flex-start;
     font-size: 20px;
-    margin-left: 40px;
+    margin-left: 50px;
     color: #766889;
+    padding-top: 55px;
 }
 
 .hideInfo {
     padding-top: 15px;
     background-color: white;
     border-radius: 0px 29px 29px 0px;
-    width: 50%;
-    height: 750px;
+    width: 60%;
+    height: 600px;
     margin-left: 175px;
     box-shadow: 2px 2px 2px #ccc;
     font-size: 17px;
     line-height: 30px;
 }
 
+.items:hover {
+    color: white;
+}
+
 .faq {
     display: flex;
     align-items: flex-start;
-    height: 750px;
+    height: 600px;
 
 }
 
 .logobackgroundFaq {
     position: absolute;
     z-index: 0;
-    right: 10px;
-    bottom: 5px;
+    right: 20px;
+    bottom: 25px;
     height: 250px;
-    transform: rotate(-180deg);
+    transform: rotate(100deg);
 }
 
-@media screen and (max-width: 600px) {
-   
 
-    .pop-up {
-        width: 70%;
-        height: 70%;
-    }
-
-    .hideInfo {
-        height: 850px;
-        width: 100%;
-    }
-
-    .logobackgroundFaq {
-        height: 150px;
-
-    }
+.standaardmenu {
+    justify-content: center;
+    text-align: center;
 
 }
+
+.standaardmenu h1 {
+    display: inline-block;
+    text-decoration: none;
+    margin: 1px;
+    padding-right: 155px;
+    color: white;
+    opacity: 75%;
+    text-shadow: 2px 2px 2px rgb(110, 109, 109);
+}
+
+.standaardmenu h1:hover {
+    color: white;
+    opacity: 100%;
+}
+
+h1.live {
+    padding-left: 55px;
+}
+
+h1.active {
+    color: white;
+    opacity: 100%;
+}
+
+
