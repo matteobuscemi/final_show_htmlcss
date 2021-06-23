@@ -1,6 +1,3 @@
-document.addEventListener('scroll', function(e) {
-    console.log(e);
-})
 
 var timetablebuttons = document.querySelectorAll(".item");
 timetablebuttons.forEach(button => {
@@ -15,7 +12,6 @@ timetablebuttons.forEach(button => {
             }
         });
 
-        // document.querySelector(`.${showEvent}`).style.display = 'block';
         var siblings = document.querySelectorAll(".timetableevent");
         siblings.forEach(sibling => {
             if(sibling.classList[0] != showEvent) {
@@ -28,13 +24,5 @@ timetablebuttons.forEach(button => {
         });
         
     })
+
 })
-// var menucluster = "web";
-// timetablebuttons.forEach(button => {
-//     button.addEventListener("click", function(){
-//         menucluster = button.classList[0];
-//         console.log(menucluster);
-//         localStorage.setItem("cluster", menucluster);
-//         window.location.href = "showroom-web.html"
-//     })
-// })

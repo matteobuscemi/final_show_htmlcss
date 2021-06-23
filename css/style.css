@@ -92,6 +92,30 @@ a h3.sluiten {
     transform:rotate(180deg) ;
 
 }
+.pop-up img.logobackground4  {
+    position: absolute;
+    z-index: -1;
+    bottom: 30px;
+    left: 350px;
+    height: 250px;
+    transform:rotate(190deg) ;
+
+}
+.pop-up img.logobackground5  {
+    position: absolute;
+    z-index: -1;
+    left: 650px;
+    height: 250px;
+    transform:rotate(90deg) ;
+
+}
+.pop-up img.logobackground6  {
+    position: absolute;
+    z-index: -1;
+    left: 50px;
+    height: 250px;
+
+}
 
 .bottom-menu {
     text-align: center;
@@ -356,7 +380,7 @@ button:hover img {
 
 .chooseTime {
     height: 120px;
-    width: 1000px;
+    width: 998px;
     border: 1px solid #ddd;
     display: flex;
     flex-direction: row;
