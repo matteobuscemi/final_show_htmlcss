@@ -205,35 +205,13 @@ p {
 
 /*faq pagina*/
 .titelBtn h5 {
-    color: black;
     margin-top: 60px;
     margin-left: 25px;
     font-size: 17px;
     text-align: left;
     line-height: 30px;
-    
+    cursor: pointer;
 
-}
-
-.hideInfo h5 {
-
-    align-items: flex-start;
-    font-size: 20px;
-    margin-left: 60px;
-    color: #766889;
-    
-}
-
-.hideInfo {
-    padding-top: 15px;
-    background-color: white;
-    border-radius: 0 29px 29px 0px;
-    width: 500px;
-    height: 737px;
-    margin-left: 175px;
-    box-shadow: 2px 2px 2px #ccc;
-  font-size: 17px;
-  line-height: 30px;
 }
 
 .titelBtn {
@@ -242,8 +220,59 @@ p {
 
 }
 
+.titelBtn a {
+    color: black;
+
+}
+
+.titelBtn a:hover {
+    color: #766889;
+}
+
+.active {
+    color: #766889;
+
+
+}
+
+.results{
+    display: block;
+}
+
+
+
+.hideInfo h5 {
+    align-items: flex-start;
+    font-size: 20px;
+    margin-left: 40px;
+    color: #766889;
+
+}
+
+.hideInfo {
+    padding-top: 15px;
+    background-color: white;
+    border-radius: 0px 29px 29px 0px;
+    width: 500px;
+    height: 737px;
+    margin-left: 175px;
+    box-shadow: 2px 2px 2px #ccc;
+    font-size: 17px;
+    line-height: 30px;
+}
+
 .faq {
     display: flex;
     align-items: flex-start;
+    height: 750px;
 
+}
+
+.logobackgroundFaq {
+    position: absolute;
+    z-index: 0;
+    right: 10px;
+    bottom: 5px;
+    height: 250px;
+    transform: rotate(-180deg);
 }
