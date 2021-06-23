@@ -1,3 +1,5 @@
+//API call
+
 const api_url = "https://finalshowcase.herokuapp.com/final-work/get-all";
 
 var buttons = document.querySelectorAll(".bottom-menu a");
@@ -29,6 +31,8 @@ async function getapi(url) {
 }
 
 getapi(api_url);
+
+//Na API Call alle projecten inladen, rangschikken per cluster en deze printen adhv keuze gebruiker
 
 function show(data) {
     var started = false;

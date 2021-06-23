@@ -1,4 +1,4 @@
-
+//Script voor divs te doen verschijnen doormiddel van het klikken van één van de timetable evenementen in timetable.html
 var timetablebuttons = document.querySelectorAll(".item");
 timetablebuttons.forEach(button => {
     button.addEventListener("click",function(){

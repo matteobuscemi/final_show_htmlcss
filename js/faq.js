@@ -1,3 +1,5 @@
+//Script voor divs te doen verschijnen doormiddel van het klikken van één van de FAQ vragen in FAQ.html
+
 "use strict";
 var faqButtons = document.querySelectorAll(".items");
 faqButtons.forEach(button => {
