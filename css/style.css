@@ -187,7 +187,15 @@ a h3.sluiten {
     
 }
 
+.left.ttl {
+    float: left;
+    top: 350px;
+}
 
+.right.ttr {
+    float: right;
+    top: 350px;
+}
 
 .left, .right {
     width: 30px;
@@ -399,6 +407,26 @@ button:hover img {
     background-color: #B89BE0;
     cursor: pointer;
 }
+.chooseTime::-webkit-scrollbar {
+    width: 100px;
+    height: 5px;
+    background: transparent;
+
+}
+.chooseTime::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+
+.chooseTime::-webkit-scrollbar-thumb {
+    background: #766889;
+    border-radius: 10px;
+}
+
+.chooseTime::-webkit-scrollbar-thumb:active {
+    background: (68,68,68);
+    border-radius: 10px;
+}
+
 
 .chooseTime .item:hover h5 {
     color: black;
@@ -410,4 +438,32 @@ button:hover img {
 
 .event1 {
     display: block;
+}
+
+.timetableevent h2 {
+    display: block;
+    margin-top: 80px;
+    margin-left: 10%;
+}
+
+.timetableevent p {
+    padding-top: 200px;
+}
+
+.timetableevent img {
+    width: 250px;
+    height: 500px;
+    object-fit: cover;
+}
+
+.timetablepu {
+    height: 500px;
+}
+
+
+
+h2.uur {
+    position: absolute;
+    right: 0;
+    padding-right: 10%;
 }
